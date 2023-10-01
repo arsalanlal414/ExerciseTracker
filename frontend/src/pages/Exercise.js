@@ -31,7 +31,7 @@ function Exercise() {
   }
 
   const accessToken = localStorage.getItem("accessToken")
-  const apiUrl = `http://exercise-tracker-api.vercel.app/api/exercise/${id}`;
+  const apiUrl = `https://exercisetrackerapp.onrender.com/api/exercise/${id}`;
   
   // Call the function and pass the URL and access token
   // getDataWithToken(apiUrl, accessToken);

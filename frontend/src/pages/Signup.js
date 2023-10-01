@@ -111,7 +111,7 @@ const Singup = () => {
     validationSchema,
     onSubmit: async (values ) => {
       const { name, email, password } = values
-      const response = await fetch('http://localhost:5001/api/users/register', {
+      const response = await fetch('https://exercisetrackerapp.onrender.com/api/users/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

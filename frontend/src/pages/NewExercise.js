@@ -59,7 +59,7 @@ const NewExercise = () => {
 
 
   // Call the function and pass the URL and access token
-  const apiUrl = 'http://exercise-tracker-api.vercel.app/api/exercise';
+  const apiUrl = 'https://exercisetrackerapp.onrender.com/api/exercise';
   const accessToken = localStorage.getItem("accessToken")
 
   // POST data to the backend
@@ -83,9 +83,7 @@ const NewExercise = () => {
       <h1>Add Exercise</h1>
       <form onSubmit={formik.handleSubmit} >
         <div>
-          {/* <label htmlFor="name">Name</label><br/>
-          <input value={exerciseData.name} type="text" placeholder='Enter Exercise Name' onChange={(e)=> setExerciseData({...exerciseData, name: e.target.value})} required/>
-           */}
+
           <label htmlFor="name">Exercise Name:</label><br/>
           <input
             type="text"
